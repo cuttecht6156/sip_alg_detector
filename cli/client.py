@@ -12,8 +12,10 @@ def getfile():
 message = getfile()
 #   Build function for running the test
 def runtest():
+    host = "192.168.108.116"
+    port = 5060
     sipsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sipsocket.connect((socket.gethostname(), 5060))
+    sipsocket.connect((host,port))
     sipsocket.send(message)
     response = sipsocket.recv(1024)
     #   Write response file with data from server
