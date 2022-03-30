@@ -5,7 +5,6 @@ from datetime import datetime
 sipsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sipsocket.bind(("",5060))
 sipsocket.listen(5)
-
 logmessage = "----ACTIVITY LOG----"
 
 #   Build function for logging past messages
@@ -33,3 +32,4 @@ while True:
     log()
     print(testresult)
     print("Test with " + address[0] + " complete and logged to log.txt")
+    break
