@@ -12,7 +12,7 @@ def getfile():
 message = getfile()
 #   Build function for running the test
 def runtest():
-    host = "ec2-52-71-116-190.compute-1.amazonaws.com"
+    host = "ec2-3-235-100-197.compute-1.amazonaws.com"
     port = 5060
     sipsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sipsocket.connect((host,port))
